@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <!--<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>-->
+        <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    </head>
+    <body>
+        <p>Score: <span id="scorec">0</span></p>
+        <p>High Score: <span id="highscorec">0</span></p>
+        <button id="info">Info</button>
+        <button id="pause">PAUSE</button>
+        <div id="wrapper">
+        <table id="area"></table>
+        <div id="paused"><b>PAUSED</b></div>
+        </div>
+        
+        <br><button id="restart">Restart</button>
+        <center>
+            <button id="up" class="dpad">⬆️</button><br>
+            <button id="left" class="dpad">⬅️️</button>
+            <button id="down" class="dpad">⬇️</button>
+            <button id="right" class="dpad">➡️</button>
+        </center>
+        <div id="speed">Speed: 
+            <ul style="list-style: none" id="speedradios">
+                <li><input type="radio" name="speed" id="veryslow">Very Slow</li>
+                <li><input type="radio" name="speed" id="slow">Slow</li>
+                <li><input type="radio" name="speed" id="mediumslow">Medium Slow</li>
+                <li><input type="radio" name="speed" id="medium" checked>Medium</li>
+                <li><input type="radio" name="speed" id="mediumfast">Medium Fast</li>
+                <li><input type="radio" name="speed" id="fast">Fast</li>
+                <li><input type="radio" name="speed" id="veryfast">Very Fast</li>
+            </ul>
+            New Speed (ms)<input id="newSpeed" type="number"><button id="newSpeedGo">Enter</button>
+        </div>
+    </body>
+</html>
